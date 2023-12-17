@@ -30,8 +30,8 @@ const a = [
   "z",
 ];
 
-const lessonNumber = 0;
-const alphabetCount = a.indexOf("a") + 1;
+const lessonNumber = 2;
+const alphabetCount = a.indexOf("f") + 1;
 
 let htmlFiles = [];
 
@@ -46,14 +46,11 @@ fs.mkdirSync(appDirectory, { recursive: true });
 // Create "style.css" file
 const styleFilePath = path.join(appDirectory, "style.css");
 const styleContent = `* {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
 body {
   font-size: 16px;
-  background-color: #111;
 }
 
 .flex {
